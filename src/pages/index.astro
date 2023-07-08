@@ -1,8 +1,8 @@
 ---
 import { SITE } from '@config';
 import { Icon } from 'astro-icon';
-const canonicalURL = new URL(Astro.url, Astro.site);
-const socialImageURL = new URL(`${Astro.url}share-og.png`, Astro.site);
+const canonicalURL = new URL(SITE.url, Astro.site);
+const socialImageURL = new URL(`${SITE.url}share-og.png`, Astro.site);
 
 const generateNodes = (word: string, nodeCount: number, wordCount: number) => {
   	let html = '';
@@ -46,11 +46,13 @@ const generatedHTML = generateNodes('NO ', 100, 200);
 		<meta property="og:url" content={canonicalURL} />
 		<meta property="og:image" content={socialImageURL} />
 		<!-- Twitter -->
-		<meta property="twitter:card" content="summary_large_image" />
-		<meta property="twitter:url" content={canonicalURL} />
-		<meta property="twitter:title" content={SITE.title} />
-		<meta property="twitter:description" content={SITE.description} />
-		<meta property="twitter:image" content={socialImageURL} />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:site" content="@st3phhays" />
+		<meta name="twitter:creator" content="@st3phhays" />
+		<meta name="twitter:url" content={canonicalURL} />
+		<meta name="twitter:title" content={SITE.title} />
+		<meta name="twitter:description" content={SITE.description} />
+		<meta name="twitter:image" content={socialImageURL} />
 		<!-- Google Font -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
