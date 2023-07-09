@@ -1511,7 +1511,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"chokidar@npm:^3.5.3":
+"chokidar@npm:>=3.0.0 <4.0.0, chokidar@npm:^3.5.3":
   version: 3.5.3
   resolution: "chokidar@npm:3.5.3"
   dependencies:
@@ -2692,6 +2692,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"immutable@npm:^4.0.0":
+  version: 4.3.0
+  resolution: "immutable@npm:4.3.0"
+  checksum: bbd7ea99e2752e053323543d6ff1cc71a4b4614fa6121f321ca766db2bd2092f3f1e0a90784c5431350b7344a4f792fa002eac227062d59b9377b6c09063b58b
+  languageName: node
+  linkType: hard
+
 "import-meta-resolve@npm:^2.1.0":
   version: 2.2.2
   resolution: "import-meta-resolve@npm:2.2.2"
@@ -2893,6 +2900,7 @@ __metadata:
     "@astrojs/sitemap": ^1.3.3
     astro: ^2.8.0
     astro-icon: ^0.8.1
+    sass: ^1.63.6
   languageName: unknown
   linkType: soft
 
@@ -4526,6 +4534,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"sass@npm:^1.63.6":
+  version: 1.63.6
+  resolution: "sass@npm:1.63.6"
+  dependencies:
+    chokidar: ">=3.0.0 <4.0.0"
+    immutable: ^4.0.0
+    source-map-js: ">=0.6.2 <2.0.0"
+  bin:
+    sass: sass.js
+  checksum: 3372319904658eeafaf78a09a6fcb3368a68e6d76fe3c43c2d009f4f72e475ab22b82ef483ef5c00fcda3ab00066846c0bd88c36b42771b855f6ab80c7eda541
+  languageName: node
+  linkType: hard
+
 "sax@npm:^1.2.4":
   version: 1.2.4
   resolution: "sax@npm:1.2.4"
@@ -4659,7 +4680,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"source-map-js@npm:^1.0.2":
+"source-map-js@npm:>=0.6.2 <2.0.0, source-map-js@npm:^1.0.2":
   version: 1.0.2
   resolution: "source-map-js@npm:1.0.2"
   checksum: c049a7fc4deb9a7e9b481ae3d424cc793cb4845daa690bc5a05d428bf41bf231ced49b4cf0c9e77f9d42fdb3d20d6187619fc586605f5eabe995a316da8d377c
