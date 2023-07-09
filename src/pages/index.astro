@@ -82,10 +82,29 @@ const generatedHTML = generateNodes('NO ', 100, 200);
 			h1 {
 				font-size: 3rem;
 				margin-top: 0;
+				margin-bottom: 1rem;
 			}
-			[astro-icon] {
-				width: 40px;
-				height: 40px;
+			code {
+				color: #d63384;
+				font-size: 1rem;
+			}
+			.github {
+				width: 0px;
+				height:0px;
+				border-bottom: 50px solid black;
+				border-left: 50px solid transparent;
+				bottom: 0;
+				right: 0;
+				position: absolute;
+				color: white
+			}
+			.github [astro-icon] {
+				width: 20px;
+				height: 20px;
+				position:absolute;
+				padding:1%;
+				bottom:-45px;
+				right:3px;
 			}
 			@media (min-width: 576px) {
 				section {
@@ -101,7 +120,9 @@ const generatedHTML = generateNodes('NO ', 100, 200);
 	<body>
 		<section>
 			<h1>Is Threads Dead?</h1>
-			<a href={SITE.gitHubUrl} target="_blank" rel="noreferrer" title="Find isthreadsdead.com on GitHub."><Icon name="grommet-icons:github" /></a>
+			<p>No, and neither is the <code>&lt;marquee&gt;</code>.</p>
+			<a href="https://buy.stripe.com/6oEaEWa0K3i5cLKaEE" target="_blank" rel="noreferrer">Change My Mind.</a>
+			<a class="github" href={SITE.gitHubUrl} target="_blank" rel="noreferrer" title="Find isthreadsdead.com on GitHub."><Icon name="grommet-icons:github" /></a>
 		</section>
 		<Fragment set:html={generatedHTML} />
 	</body>
